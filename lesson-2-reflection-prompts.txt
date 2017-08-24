@@ -16,6 +16,11 @@ change?
     you can add as many files into the stating area as you decide to commit at one time
 
     git commit: open the commit editor and enter the message (type i and quit by ese), then save it (type :x! to save or :q! to quit but not save)
+    git commit -m "message" works the same way
+
+    git diff: can compare files in working directory and staing area
+    git diff --staged: to compare files in staging area and repository before commit
+    git reset --hard: discards any change in either working directory or staging area (**careful: this command is irreversible)
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
