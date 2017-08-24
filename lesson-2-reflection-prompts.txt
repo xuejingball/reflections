@@ -1,0 +1,33 @@
+What happens when you initialize a repository? Why do you need to do it?
+	git init: can create an empty repository or one with files in it. But the new repository contains 0 commit.
+	git status: to show which files have changed since the last commit
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+    staging area is in the middle of the working directory and the rpository. 
+    working directory is where the files saved on your hard drive.
+    repository is the git folder to save all your commit version.
+    staging area behaves like a tempory storage for the files you wanna commit. You can make a small logical change in part of your file and commit.
+    
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+    git add: to add file in the staging area
+    you can add as many files into the stating area as you decide to commit at one time
+
+    git commit: open the commit editor and enter the message (type i and quit by ese), then save it (type :x! to save or :q! to quit but not save)
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+
+
+
+
