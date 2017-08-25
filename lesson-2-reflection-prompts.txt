@@ -24,15 +24,33 @@ change?
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+    git branch: shows current branches
+    git branch <branchname>: create a branch
+    git checkout <branchname>: swith to the branch with the branchname
+    branches are helpful when you wanna make overheads of your project, such as in a different language, add experimental features, significant back-up and fix bugs.
+    branches also allow you to organize your files and collaborate with others
 
 How do the diagrams help you visualize the branch structure?
+    to merge the coin branch into master branch, you need to switch to the master branch firs (git branch/git checkout master), then merge
+    git merge <branch1> <branch2>: to merge branch2 into branch 1(coin into master branch).
+    git show <commitID>: to show you what changes (like diff) were intoduced by a commit compared to its parent, without knowing which the parent is.
+    git branch -d <branchname>: to delete a branch label
+
+    if you get a message like:
+    Auto-merging game.js
+    CONFLICT (content): Merge conflict in game.js
+    Auomatic merge failed; fix conflicts and the commit the resul
+   	to fix this: git merge --abort, chec the state of the files.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+    to checkout to the branch you want other branches to merge into
+    git merge <branchname>: merge the target branch into your current branch
+    git log -n 1: will show only one commit with its description
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
-
+    less effort and less work and more accurate to handle
 
 
 
