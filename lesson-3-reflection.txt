@@ -1,0 +1,50 @@
+When would you want to use a remote repository rather than keeping all your work
+local?
+
+    git remote: to show all the current remote links 
+    git remote origin<remotename> <URL>: add the repository on GitHub
+    git remote -v: to verify that te URL was added correctly
+    git push origin<remote> master<localbranch>: in order to send my changes to the remote
+
+Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+    git pull origin<remote> master<GitHubBranch>: in order to pull the changes from GitHub to your local repository
+
+Describe the differences between forks, clones, and branches.  When would you
+use one instead of another?
+
+    Forking allows you to make a copy of somebody elses repository directly on the GitHub servers without pulling down the code to your 
+local machine first.
+    Branching happens on a single repository, to make a new commit
+    Cloning involves taking an existing repstoryand makig one just like it.
+    
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+    Merging Remote Changes
+    git fetch origin: update origin/master with the contents of GitHub's master branch
+    git pull: in addition to git fetch, it will merge origin/master into master
+    git pull origin master = git fetch origin + git merge master origin/master
+
+
+    get original url as your remote link
+    git remote add upstream <url>
+    git pull upstream master
+
+    Fast-forward Merges: 
+    take a label from he history of a branch somewhere in its ancestry, and moving that label forward to the tip of the branch.
+
+How would you collaborate without using Git or GitHub?  What would be easier,
+and what would be harder?
+
+    pull request (also understand as merge request): operate on GitHub
+    1. create a different branch (checkout to it) and make the change in your local directory
+    2. add file to staging area and commit to git repository
+    3. push your change in the remote repository using a different branch (git push origin <branchname instead of master>)
+    4. click on pull request and choose to modify your own fork
+    * In a collaborative environment, it's only allow the pull request to make change to the master branch
+When would you want to make changes in a separate branch rather than directly in
+master?  What benefits does each approach have?
+
+    Fill in your answer here
